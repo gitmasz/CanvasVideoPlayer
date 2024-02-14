@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Marcin Szczepkowski">
+  <title>Canvas Video Player - blob version</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer="defer" src="js/blob-player.js"></script>
+</head>
+
+<body>
+  <div class="fullpage-message">
+    <div class="content fullpage-message__content">
+      <h1>Canvas Video Player</h1>
+      <p>blob version with progress bar</p>
+      <div id="video-container" class="video-container">
+        <canvas id="canvas" class="video-container__canvas video-container__canvas--clickable"></canvas>
+        <svg id="video-play-button" class="video-container__play-button" viewBox="0 0 200 200" alt="Play video">
+          <circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff" />
+          <polygon points="70, 55 70, 145 145, 100" fill="#fff" />
+        </svg>
+        <div id="progress" class="video-container__progress-bar">
+          <span id="buffered-amount" class="progress-bar__buffered-amount"></span>
+          <span id="progress-amount" class="progress-bar__progress-amount"></span>
+        </div>
+        <video id="video" class="video-container__video" width="100%" height="auto"></video>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
